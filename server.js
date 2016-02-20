@@ -13,6 +13,11 @@ app.engine('handlebars', exphbs({
 
 app.set('view engine', 'handlebars');
 
+var Chcolate = connection.define('chocolate', {
+  name: Sequelize.STRING,
+  satisfaction: Sequelize.INTEGER
+});
+
 //routes
 app.get('/', function(req, res) {
   res.render('home');
