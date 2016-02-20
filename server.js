@@ -12,6 +12,10 @@ var PORT = process.env.PORT || 8080;
 
 app.set('view engine', 'handlebars');
 
+app.engine('handlebars', expressHandlebars({
+  defaultLayout: 'main'
+}));
+
 //routes
 app.get('/', function(req, res) {
   res.render('chocolate_db');
