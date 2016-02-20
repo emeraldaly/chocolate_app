@@ -13,21 +13,21 @@ app.engine('handlebars', exphbs({
 
 app.set('view engine', 'handlebars');
 
-var Chcolate = connection.define('chocolate', {
+var Chocolate = connection.define('chocolate', {
   name: Sequelize.STRING,
   satisfaction: Sequelize.INTEGER
 });
 
-Chocolate.bulkCreate([
-  {name: 'Dark Chocolate', satisfaction: 8},
-  {name: 'Couverture', satisfaction: 5},
-  {name: 'Milk Chocolate', satisfaction: 10},
-  {name: 'Hershey', satisfaction: 7},
-  {name: 'White Chocolate', satisfaction: 8},
-  {name: 'Unsweetened Chocolate', satisfaction: 5},
-  {name: 'Gianduja', satisfaction: 6},
-  {name: 'Cacao', satisfaction: 4},
-  ]);
+// Chocolate.bulkCreate([
+//   {name: 'Dark Chocolate', satisfaction: 8},
+//   {name: 'Couverture', satisfaction: 5},
+//   {name: 'Milk Chocolate', satisfaction: 10},
+//   {name: 'Hershey', satisfaction: 7},
+//   {name: 'White Chocolate', satisfaction: 8},
+//   {name: 'Unsweetened Chocolate', satisfaction: 5},
+//   {name: 'Gianduja', satisfaction: 6},
+//   {name: 'Cacao', satisfaction: 4},
+//   ]);
 
 //routes
 app.get('/', function(req, res) {
