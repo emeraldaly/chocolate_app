@@ -3,7 +3,7 @@ var exphbs = require('express-handlebars');
 var Sequelize = require('sequelize');
 var session = require("express-session");
 
-var connection = new Sequelize('class_app_db', 'root', {
+var connection = new Sequelize('chocolate_db', 'root', {
 
 });
 var app = express();
