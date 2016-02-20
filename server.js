@@ -9,3 +9,10 @@ var connection = new Sequelize('chocolate_db', 'root', {
 var app = express();
 
 var PORT = process.env.PORT || 8080;
+
+app.set('view engine', 'handlebars');
+
+//routes
+app.get('/', function(req, res) {
+  res.render('chocolate');
+});
