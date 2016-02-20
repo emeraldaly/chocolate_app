@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars');
 
 //routes
 app.get('/', function(req, res) {
-  res.render('chocolate');
+  res.render('chocolate_db');
 });
 
 app.listen(PORT, function() {
