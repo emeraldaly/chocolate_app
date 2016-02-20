@@ -18,6 +18,17 @@ var Chcolate = connection.define('chocolate', {
   satisfaction: Sequelize.INTEGER
 });
 
+Chocolate.bulkCreate([
+  {name: 'Dark Chocolate', satisfaction: 8},
+  {name: 'Couverture', satisfaction: 5},
+  {name: 'Milk Chocolate', satisfaction: 10},
+  {name: 'Hershey', satisfaction: 7},
+  {name: 'White Chocolate', satisfaction: 8},
+  {name: 'Unsweetened Chocolate', satisfaction: 5},
+  {name: 'Gianduja', satisfaction: 6},
+  {name: 'Cacao', satisfaction: 4},
+  ]);
+
 //routes
 app.get('/', function(req, res) {
   res.render('home');
