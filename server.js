@@ -31,7 +31,11 @@ var Chocolate = connection.define('chocolate', {
 
 //routes
 app.get('/', function(req, res) {
-  res.render('home');
+  Chocolate.findAll({}).then(function(chocolate) {
+
+
+  res.render('home', {chocolates});
+  });
 });
 
 connection.sync().then(function() {
